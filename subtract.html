@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://use.fontawesome.com/8a3480b18d.js"></script>
-  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="./CSS/style.css">
   <title>Subtract</title>
-  
+
 </head>
+
 <body>
-  
+
   <audio id="myAudio1">
-    <source src="../Audio/buzzer.mp3" type="audio/mpeg">
+    <source src="./Audio/buzzer.mp3" type="audio/mpeg">
   </audio>
   <audio id="myAudio2">
-    <source src="../Audio/cheer.mp3" type="audio/mpeg">
+    <source src="./Audio/cheer.mp3" type="audio/mpeg">
   </audio>
 
   <header>
     <div class="container">
       <div class="nav">
-        <a href="../HTML/index.html"><h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH HERO</h2></a>
+        <a href="./index.html">
+          <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH HERO</h2>
+        </a>
         <nav>
           <ul>
             <li><a href="add.html">Add</a></li>
@@ -32,29 +36,30 @@
       </div>
     </div>
   </header>
-  
+
   <div class="wrapper">
-      <div class="equation">
-        <h1  id="num1">1</h1>
-        <h1 id="operator">-</h1>
-        <h1  id="num2">1</h1>
-        <h1 id="equals">=</h1>
-        <h1 id="questionMark">?</h1>
+    <div class="equation">
+      <h1 id="num1">1</h1>
+      <h1 id="operator">-</h1>
+      <h1 id="num2">1</h1>
+      <h1 id="equals">=</h1>
+      <h1 id="questionMark">?</h1>
+    </div>
+    <div class="answer-options">
+      <div class="options" id="option1b">
+        <h1 id="option1">1</h1>
       </div>
-      <div class="answer-options">
-        <div class="options" id="option1b">
-          <h1 id="option1">1</h1>
-        </div>
-        <div class="options" id="option2b">
-          <h1 id="option2">2</h1>
-        </div>
-        <div class="options" id="option3b">
-          <h1 id="option3">3</h1>
-        </div>
+      <div class="options" id="option2b">
+        <h1 id="option2">2</h1>
       </div>
+      <div class="options" id="option3b">
+        <h1 id="option3">3</h1>
+      </div>
+    </div>
   </div>
 
-  <script src="../Javascript/subtract.js"></script>
-  
+  <script src="./Javascript/subtract.js"></script>
+
 </body>
+
 </html>
