@@ -167,6 +167,8 @@ nav a{
   padding: 14px 8px 14px 8px;
   border-radius: 5px;
   font-size: 50px;
+  text-align: center;
+  position: relative;
 }
 
 .button:hover {
@@ -197,9 +199,19 @@ nav a{
 }
 
 #footer {
-  padding-top: 200px;
+  padding-top: 140px;
   text-align: center;
   font-size: 16px;
+}
+
+#contact {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#two {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @keyframes body_animate {
@@ -233,7 +245,16 @@ nav a{
   nav li{
     font-size: 1rem;
   }
+
+  .equation {
+  font-size: 60px;
+  }
+
+  .answer-options{
+  font-size: 60px;
+  }
 }
+
 
 @media(max-width:480px){
   .nav h2{
@@ -241,10 +262,13 @@ nav a{
     text-align: center;
   }
 
-  .equation h1{
-    display: inline;
-    padding: 10px;
-  } 
+  .equation {
+    font-size: 20px;
+    }
+
+    .answer-options{
+      font-size: 20px;
+      }
 
   nav li{
     font-size: .8rem;
