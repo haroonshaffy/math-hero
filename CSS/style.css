@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Luckiest Guy', cursive;
+  /*background-color: #E6E6EA;*/
+}
+
+header{
+  background: #FE4A49;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+.nav{
+  overflow: hidden;
+  background:#FE4A49;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav h2{
+  font-size: 40px;
+  float: left;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  font-size: 25px;
+  margin-top: 5px;
+  float: left;
+  padding: 0 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.current a::after{
+  content: '-';
+  font-size: 4px;
+  background-color: white;
+  display: block;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  margin-right: 10px;
+}
+
+#num1 {
+  color: #FE4A49;
+}
+
+#operator {
+  color: #2AB7CA;;
+}
+
+#num2 {
+  color: #FED766;
+}
+
+#equals {
+  color: #F86624;
+}
+
+#questionMark {
+  color: gray;
+}
+
+.equation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  font-size: 90px;
+  background: #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+}
+
+.equation h1{
+  display: inline;
+  padding: 20px;
+}
+
+.answer-options{
+  font-size: 80px;
+  margin-right: 10px;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+.options:hover {
+  transform: scaleY(1.1)
+}
+
+#option1b {
+  background-color: #FE4A49;
+  transition: 1s;
+}
+
+#option1b:hover {
+  background-color:white;
+  color: #FE4A49;
+}
+
+#option2b {
+  background-color: #2AB7CA;
+  transition: 1s;
+}
+
+#option2b:hover {
+  background-color:white;
+  color: #2AB7CA;
+}
+
+#option3b {
+  background-color: #FED766;
+  transition: 1s;
+}
+
+#option3b:hover {
+  background-color:white;
+  color: #FED766;
+}
+
+#play-button {
+  margin-top: 5%;
+  margin-left: 41%;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #FE4A49;
+  color: #fff;
+  padding: 14px 8px 14px 8px;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+  color: #FE4A49;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: darkred;
+}
+
+#title {
+  font-size: 76px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#gameName {
+  border-radius: 5px;
+}
+
+#bodyElements {
+  height: 750px;
+  overflow: hidden;
+  animation: body_animate 6s infinite;
+  /*margin: 5px;*/
+}
+
+#footer {
+  padding-top: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@keyframes body_animate {
+  0% {
+      background-color: darkorange;
+  }
+  30% {
+      background-color: skyblue;
+  }
+  65% {
+      background-color: green;
+  }
+  100% {
+      background-color: pink;
+  }
+}
+
+@media(max-width:768px){
+  .nav h2{
+    font-size: 1.5rem;
+    float: none;
+    text-align: center;
+  }
+
+  nav{
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:480px){
+  .nav h2{
+    float: none;
+    text-align: center;
+  }
+
+  .equation h1{
+    display: inline;
+    padding: 10px;
+  } 
+
+  nav li{
+    font-size: .8rem;
+  }
+
+}
