@@ -1,0 +1,7 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Cache-Control: no-cache
+  X-XSS-Protection: 1; mode=block
+  Content-Type: text/html; charset=UTF-8
