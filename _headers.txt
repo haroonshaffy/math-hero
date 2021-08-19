@@ -5,3 +5,4 @@
   Cache-Control: no-cache
   X-XSS-Protection: 1; mode=block
   Content-Type: text/html; charset=UTF-8
+  Content-Security-Policy: script-src 'self'
